@@ -9,14 +9,14 @@ defmodule Ptr.Lab1 do
   ## Examples
 
       iex> Ptr.Lab1.hello()
-      :hello_world
+      :hello_ptr
 
   """
   def hello(:print) do
-    IO.puts("Hello World!")
+    IO.puts("Hello PTR")
   end
 
   def hello() do
-    :hello_world
+    :hello_ptr
   end
 end

@@ -3,6 +3,6 @@ defmodule Ptr.Lab1Test do
   doctest Ptr.Lab1
 
   test "greets the world" do
-    assert Ptr.Lab1.hello() == :hello_world
+    assert Ptr.Lab1.hello() == :hello_ptr
   end
 end
