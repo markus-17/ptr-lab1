@@ -1,5 +1,5 @@
 defmodule Ptr.Week3.Semaphore do
-  @doc """
+  @moduledoc """
   This module implements a semaphore.
   
   In order to test this module I recommend the following approach
