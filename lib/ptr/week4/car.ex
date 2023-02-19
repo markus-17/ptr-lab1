@@ -17,7 +17,7 @@ defmodule Ptr.Week4.CarMonitor do
         {Ptr.Week4.Sensor, :loop, ["Cabin"]},
         {Ptr.Week4.Sensor, :loop, ["Motor"]},
         {Ptr.Week4.Sensor, :loop, ["Chassis"]}
-      ]
+      ] ++ (1..4 |> Enum.map(fn i -> {Ptr.Week4.Sensor, :loop, ["Wheel #{i}"]} end))
     ])
   end
 
@@ -37,8 +37,8 @@ defmodule Ptr.Week4.CarMonitor do
         acc + if ever_crashed?, do: 1, else: 0
       end)
 
-    if crashed_sensors == length(sensors_map) do
-      IO.puts("The Airbags were Activated!!!")
+    if crashed_sensors > length(sensors_map) / 2 do
+      IO.puts("\n\n!!! The Airbags were Activated !!!\n\n")
 
       sensors_map
       |> Enum.map(fn {ref, [{module, start_fn, args}, _ever_crashed]} ->
