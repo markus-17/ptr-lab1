@@ -24,3 +24,6 @@ ptrlab1-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+# I create a json file in week5
+quotes.json
