@@ -25,7 +25,9 @@ defmodule Ptr.Lab1.MixProject do
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
       {:httpoison, "~> 2.0"},
       {:poison, "~> 5.0"},
-      {:floki, "~> 0.34.1"}
+      {:floki, "~> 0.34.1"},
+      {:plug, "~> 1.13"},
+      {:plug_cowboy, "~> 2.0"}
     ]
   end
 end
